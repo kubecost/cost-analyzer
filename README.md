@@ -35,7 +35,7 @@ Visit the Kubecost docs for [recommended install options](https://docs.kubecost.
 
 ## Contributing
 
-We :heart: pull requests! See [`CONTRIBUTING.md`](CONTRIBUTING.md) for information on buiding the project from source
+We :heart: pull requests! See [`CONTRIBUTING.md`](https://github.com/kubecost/cost-model/blob/develop/CONTRIBUTING.md) for information on buiding the project from source
 and contributing changes. 
 
 ## Licensing
