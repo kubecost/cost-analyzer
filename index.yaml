@@ -6,8 +6,35 @@ entries:
         - name: Homepage
           url: https://www.kubecost.com
     apiVersion: v2
+    appVersion: 1.101.0
+    created: "2023-03-10T22:11:50.64934965Z"
+    dependencies:
+    - condition: global.grafana.enabled
+      name: grafana
+      repository: file://./charts/grafana
+      version: ~1.17.2
+    - condition: global.prometheus.enabled
+      name: prometheus
+      repository: file://./charts/prometheus
+      version: ~11.0.2
+    - condition: global.thanos.enabled
+      name: thanos
+      repository: file://./charts/thanos
+      version: ~0.29.0
+    description: A Helm chart that sets up Kubecost, Prometheus, and Grafana to monitor
+      cloud costs.
+    digest: 8bc51a83d8d7ed9e3a67cc05224c63dc915e061f904269ab8c97c3959e8db899
+    name: cost-analyzer
+    urls:
+    - cost-analyzer-1.101.0.tgz
+    version: 1.101.0
+  - annotations:
+      artifacthub.io/links: |
+        - name: Homepage
+          url: https://www.kubecost.com
+    apiVersion: v2
     appVersion: 1.101.0-rc.4
-    created: "2023-03-09T00:45:30.640504683Z"
+    created: "2023-03-10T22:11:50.634476861Z"
     dependencies:
     - condition: global.grafana.enabled
       name: grafana
@@ -34,7 +61,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v2
     appVersion: 1.101.0-rc.3
-    created: "2023-03-09T00:45:30.625745543Z"
+    created: "2023-03-10T22:11:50.619866686Z"
     dependencies:
     - condition: global.grafana.enabled
       name: grafana
@@ -61,7 +88,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v2
     appVersion: 1.101.0-rc.2
-    created: "2023-03-09T00:45:30.612061913Z"
+    created: "2023-03-10T22:11:50.605236109Z"
     dependencies:
     - condition: global.grafana.enabled
       name: grafana
@@ -88,7 +115,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v2
     appVersion: 1.100.2
-    created: "2023-03-09T00:45:30.598233882Z"
+    created: "2023-03-10T22:11:50.590817642Z"
     dependencies:
     - condition: global.grafana.enabled
       name: grafana
@@ -115,7 +142,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v2
     appVersion: 1.100.2-rc.1
-    created: "2023-03-09T00:45:30.584557352Z"
+    created: "2023-03-10T22:11:50.576413875Z"
     dependencies:
     - condition: global.grafana.enabled
       name: grafana
@@ -142,7 +169,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v2
     appVersion: 1.100.2-rc.0
-    created: "2023-03-09T00:45:30.570712821Z"
+    created: "2023-03-10T22:11:50.561990308Z"
     dependencies:
     - condition: global.grafana.enabled
       name: grafana
@@ -169,7 +196,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v2
     appVersion: 1.100.1
-    created: "2023-03-09T00:45:30.557450695Z"
+    created: "2023-03-10T22:11:50.546923311Z"
     dependencies:
     - condition: global.grafana.enabled
       name: grafana
@@ -196,7 +223,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v2
     appVersion: 1.100.0
-    created: "2023-03-09T00:45:30.543923467Z"
+    created: "2023-03-10T22:11:50.532126126Z"
     dependencies:
     - condition: global.grafana.enabled
       name: grafana
@@ -223,7 +250,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v2
     appVersion: 1.100.0-rc.2
-    created: "2023-03-09T00:45:30.530658341Z"
+    created: "2023-03-10T22:11:50.513898383Z"
     dependencies:
     - condition: global.grafana.enabled
       name: grafana
@@ -250,7 +277,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v2
     appVersion: 1.100.0-rc.1
-    created: "2023-03-09T00:45:30.517191214Z"
+    created: "2023-03-10T22:11:50.498090252Z"
     dependencies:
     - condition: global.grafana.enabled
       name: grafana
@@ -277,7 +304,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v2
     appVersion: 1.100.0-rc.0
-    created: "2023-03-09T00:45:30.502346273Z"
+    created: "2023-03-10T22:11:50.480875255Z"
     dependencies:
     - condition: global.grafana.enabled
       name: grafana
@@ -304,7 +331,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v2
     appVersion: 1.99.0
-    created: "2023-03-09T00:45:33.522953195Z"
+    created: "2023-03-10T22:11:53.770442347Z"
     dependencies:
     - condition: global.grafana.enabled
       name: grafana
@@ -331,7 +358,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v2
     appVersion: 1.99.0-rc.9
-    created: "2023-03-09T00:45:33.509590868Z"
+    created: "2023-03-10T22:11:53.750509525Z"
     dependencies:
     - condition: global.grafana.enabled
       name: grafana
@@ -358,7 +385,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v2
     appVersion: 1.99.0-rc.8
-    created: "2023-03-09T00:45:33.496616545Z"
+    created: "2023-03-10T22:11:53.734858701Z"
     dependencies:
     - condition: global.grafana.enabled
       name: grafana
@@ -385,7 +412,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v2
     appVersion: 1.99.0-rc.0
-    created: "2023-03-09T00:45:33.483823324Z"
+    created: "2023-03-10T22:11:53.714369253Z"
     dependencies:
     - condition: global.grafana.enabled
       name: grafana
@@ -412,7 +439,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v2
     appVersion: 1.98.0
-    created: "2023-03-09T00:45:33.469931493Z"
+    created: "2023-03-10T22:11:53.693800601Z"
     dependencies:
     - condition: global.grafana.enabled
       name: grafana
@@ -439,7 +466,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v2
     appVersion: 1.98.0-rc.4
-    created: "2023-03-09T00:45:33.457049171Z"
+    created: "2023-03-10T22:11:53.671117052Z"
     dependencies:
     - condition: global.grafana.enabled
       name: grafana
@@ -466,7 +493,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v2
     appVersion: 1.98.0-rc.3
-    created: "2023-03-09T00:45:33.443800046Z"
+    created: "2023-03-10T22:11:53.65248859Z"
     dependencies:
     - condition: global.grafana.enabled
       name: grafana
@@ -493,7 +520,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v2
     appVersion: 1.98.0-rc.2
-    created: "2023-03-09T00:45:33.431213326Z"
+    created: "2023-03-10T22:11:53.636332743Z"
     dependencies:
     - condition: global.grafana.enabled
       name: grafana
@@ -520,7 +547,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v2
     appVersion: 1.98.0-rc.1
-    created: "2023-03-09T00:45:33.418673608Z"
+    created: "2023-03-10T22:11:53.622674211Z"
     dependencies:
     - condition: global.grafana.enabled
       name: grafana
@@ -547,7 +574,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v2
     appVersion: 1.97.0
-    created: "2023-03-09T00:45:33.404956678Z"
+    created: "2023-03-10T22:11:53.608734866Z"
     dependencies:
     - condition: global.grafana.enabled
       name: grafana
@@ -574,7 +601,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v2
     appVersion: 1.97.0-rc.5
-    created: "2023-03-09T00:45:33.391566451Z"
+    created: "2023-03-10T22:11:53.591054348Z"
     dependencies:
     - condition: global.grafana.enabled
       name: grafana
@@ -601,7 +628,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v2
     appVersion: 1.97.0-rc.4
-    created: "2023-03-09T00:45:33.378397027Z"
+    created: "2023-03-10T22:11:53.577417917Z"
     dependencies:
     - condition: global.grafana.enabled
       name: grafana
@@ -628,7 +655,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v2
     appVersion: 1.96.0
-    created: "2023-03-09T00:45:33.365282702Z"
+    created: "2023-03-10T22:11:53.563199459Z"
     dependencies:
     - condition: global.grafana.enabled
       name: grafana
@@ -652,7 +679,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v2
     appVersion: 1.96.0-rc.5
-    created: "2023-03-09T00:45:33.352168278Z"
+    created: "2023-03-10T22:11:53.546283877Z"
     dependencies:
     - condition: global.grafana.enabled
       name: grafana
@@ -676,7 +703,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v2
     appVersion: 1.96.0-rc.4
-    created: "2023-03-09T00:45:33.338941253Z"
+    created: "2023-03-10T22:11:53.526022639Z"
     dependencies:
     - condition: global.grafana.enabled
       name: grafana
@@ -700,7 +727,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v2
     appVersion: 1.96.0-rc.2
-    created: "2023-03-09T00:45:33.32589543Z"
+    created: "2023-03-10T22:11:53.50421363Z"
     dependencies:
     - condition: global.grafana.enabled
       name: grafana
@@ -724,7 +751,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v2
     appVersion: 1.96.0-rc.1
-    created: "2023-03-09T00:45:33.312714205Z"
+    created: "2023-03-10T22:11:53.484403314Z"
     dependencies:
     - condition: global.grafana.enabled
       name: grafana
@@ -748,7 +775,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v2
     appVersion: 1.96.0-rc.0
-    created: "2023-03-09T00:45:33.299882184Z"
+    created: "2023-03-10T22:11:53.464616098Z"
     dependencies:
     - condition: global.grafana.enabled
       name: grafana
@@ -772,7 +799,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v2
     appVersion: 1.95.1
-    created: "2023-03-09T00:45:33.287340865Z"
+    created: "2023-03-10T22:11:53.438051069Z"
     dependencies:
     - condition: global.grafana.enabled
       name: grafana
@@ -796,7 +823,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v2
     appVersion: 1.95.0
-    created: "2023-03-09T00:45:33.27525415Z"
+    created: "2023-03-10T22:11:53.418148848Z"
     dependencies:
     - condition: global.grafana.enabled
       name: grafana
@@ -820,7 +847,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v2
     appVersion: 1.95.0-rc.10
-    created: "2023-03-09T00:45:33.224829173Z"
+    created: "2023-03-10T22:11:53.345233075Z"
     dependencies:
     - condition: global.grafana.enabled
       name: grafana
@@ -844,7 +871,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v2
     appVersion: 1.95.0-rc.6
-    created: "2023-03-09T00:45:33.262948134Z"
+    created: "2023-03-10T22:11:53.404867134Z"
     dependencies:
     - condition: global.grafana.enabled
       name: grafana
@@ -868,7 +895,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v2
     appVersion: 1.95.0-rc.5
-    created: "2023-03-09T00:45:33.250280614Z"
+    created: "2023-03-10T22:11:53.378804728Z"
     dependencies:
     - condition: global.grafana.enabled
       name: grafana
@@ -892,7 +919,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v2
     appVersion: 1.95.0-rc.3
-    created: "2023-03-09T00:45:33.237450493Z"
+    created: "2023-03-10T22:11:53.358886707Z"
     dependencies:
     - condition: global.grafana.enabled
       name: grafana
@@ -916,7 +943,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v2
     appVersion: 1.95.0-rc.1
-    created: "2023-03-09T00:45:33.212103353Z"
+    created: "2023-03-10T22:11:53.320901649Z"
     dependencies:
     - condition: global.grafana.enabled
       name: grafana
@@ -940,7 +967,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v2
     appVersion: 1.95.0-rc.0
-    created: "2023-03-09T00:45:33.199371332Z"
+    created: "2023-03-10T22:11:53.294096209Z"
     dependencies:
     - condition: global.grafana.enabled
       name: grafana
@@ -964,7 +991,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v2
     appVersion: 1.94.3
-    created: "2023-03-09T00:45:33.186691912Z"
+    created: "2023-03-10T22:11:53.274634109Z"
     dependencies:
     - condition: global.grafana.enabled
       name: grafana
@@ -988,7 +1015,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v2
     appVersion: 1.94.2
-    created: "2023-03-09T00:45:33.174036492Z"
+    created: "2023-03-10T22:11:53.255956144Z"
     dependencies:
     - condition: global.grafana.enabled
       name: grafana
@@ -1012,7 +1039,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v2
     appVersion: 1.94.1
-    created: "2023-03-09T00:45:33.161349272Z"
+    created: "2023-03-10T22:11:53.235426495Z"
     dependencies:
     - condition: global.grafana.enabled
       name: grafana
@@ -1036,7 +1063,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v2
     appVersion: 1.94.0
-    created: "2023-03-09T00:45:33.148729853Z"
+    created: "2023-03-10T22:11:53.199083813Z"
     dependencies:
     - condition: global.grafana.enabled
       name: grafana
@@ -1060,7 +1087,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v2
     appVersion: 1.94.0-rc.1
-    created: "2023-03-09T00:45:33.135918232Z"
+    created: "2023-03-10T22:11:53.185269274Z"
     dependencies:
     - condition: global.grafana.enabled
       name: grafana
@@ -1084,7 +1111,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v2
     appVersion: 1.94.0-rc.0
-    created: "2023-03-09T00:45:33.123540915Z"
+    created: "2023-03-10T22:11:53.159093663Z"
     dependencies:
     - condition: global.grafana.enabled
       name: grafana
@@ -1108,7 +1135,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v2
     appVersion: 1.93.2
-    created: "2023-03-09T00:45:33.110958095Z"
+    created: "2023-03-10T22:11:53.146876898Z"
     dependencies:
     - condition: global.grafana.enabled
       name: grafana
@@ -1132,7 +1159,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v2
     appVersion: 1.93.1
-    created: "2023-03-09T00:45:33.098419977Z"
+    created: "2023-03-10T22:11:53.124985785Z"
     dependencies:
     - condition: global.grafana.enabled
       name: grafana
@@ -1156,7 +1183,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v2
     appVersion: 1.93.0
-    created: "2023-03-09T00:45:33.085568855Z"
+    created: "2023-03-10T22:11:53.099140789Z"
     dependencies:
     - condition: global.grafana.enabled
       name: grafana
@@ -1180,7 +1207,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v2
     appVersion: 1.93.0-rc.1
-    created: "2023-03-09T00:45:33.073039837Z"
+    created: "2023-03-10T22:11:53.085403954Z"
     dependencies:
     - condition: global.grafana.enabled
       name: grafana
@@ -1204,7 +1231,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v2
     appVersion: 1.93.0-rc.0
-    created: "2023-03-09T00:45:33.060352817Z"
+    created: "2023-03-10T22:11:53.057476862Z"
     dependencies:
     - condition: global.grafana.enabled
       name: grafana
@@ -1228,7 +1255,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v2
     appVersion: 1.92.0
-    created: "2023-03-09T00:45:33.047680097Z"
+    created: "2023-03-10T22:11:53.040215963Z"
     description: A Helm chart that sets up Kubecost, Prometheus, and Grafana to monitor
       cloud costs.
     digest: 0a700c779dd30334da22f82e24dc9b96e3d36d0b49aa1797cb37d509682664f7
@@ -1242,7 +1269,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v2
     appVersion: 1.92.0-rc.1
-    created: "2023-03-09T00:45:33.035004777Z"
+    created: "2023-03-10T22:11:53.026145412Z"
     description: A Helm chart that sets up Kubecost, Prometheus, and Grafana to monitor
       cloud costs.
     digest: 71ddd58d7fd8c4de2c4b0a11cf3c5fc3fee73f3540f1025c60d1fc5c1c1a2d9f
@@ -1256,7 +1283,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v2
     appVersion: 1.92.0-rc.0
-    created: "2023-03-09T00:45:33.022317357Z"
+    created: "2023-03-10T22:11:53.006336196Z"
     description: A Helm chart that sets up Kubecost, Prometheus, and Grafana to monitor
       cloud costs.
     digest: 6bbe2519763ac938bc98c335799691266a697ae16d747e8a47ee82d18187e0f7
@@ -1270,7 +1297,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v2
     appVersion: 1.91.2
-    created: "2023-03-09T00:45:33.010166742Z"
+    created: "2023-03-10T22:11:52.992830671Z"
     description: A Helm chart that sets up Kubecost, Prometheus, and Grafana to monitor
       cloud costs.
     digest: 71ae0a79bda6335b2a29a70ac53420290bdee158c4f2b186a9110ed9f07d646c
@@ -1284,7 +1311,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v2
     appVersion: 1.91.1
-    created: "2023-03-09T00:45:32.998271129Z"
+    created: "2023-03-10T22:11:52.971598489Z"
     description: A Helm chart that sets up Kubecost, Prometheus, and Grafana to monitor
       cloud costs.
     digest: 24e62448080ee1b982c079a0a1ba5cd6cfe6e6460dff3b9643d72d765acbe608
@@ -1298,7 +1325,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v2
     appVersion: 1.91.0
-    created: "2023-03-09T00:45:32.985933412Z"
+    created: "2023-03-10T22:11:52.951831874Z"
     description: A Helm chart that sets up Kubecost, Prometheus, and Grafana to monitor
       cloud costs.
     digest: 9e27df0411ccdc76f61e906a711d552c4df43f1ff6dfa7792c05515de55ad511
@@ -1312,7 +1339,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v2
     appVersion: 1.91.0-rc.3
-    created: "2023-03-09T00:45:32.973593895Z"
+    created: "2023-03-10T22:11:52.931912653Z"
     description: A Helm chart that sets up Kubecost, Prometheus, and Grafana to monitor
       cloud costs.
     digest: 2547ac68f835c719d0189cc0ca00b4b95ffb06d29d38538c52f345817f99ce76
@@ -1326,7 +1353,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v2
     appVersion: 1.91.0-rc.2
-    created: "2023-03-09T00:45:32.961002276Z"
+    created: "2023-03-10T22:11:52.909779729Z"
     description: A Helm chart that sets up Kubecost, Prometheus, and Grafana to monitor
       cloud costs.
     digest: 5a19306eab37d93c1232f56ed2f0b2bbc55cde469a0e3405075366a1cece861d
@@ -1340,7 +1367,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v2
     appVersion: 1.91.0-rc.1
-    created: "2023-03-09T00:45:32.94876796Z"
+    created: "2023-03-10T22:11:52.889725701Z"
     description: A Helm chart that sets up Kubecost, Prometheus, and Grafana to monitor
       cloud costs.
     digest: 56d606bdd9ab936e90d39959c61d3423a7d27ecd9af9dda1989df6f159f66cbb
@@ -1354,7 +1381,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v2
     appVersion: 1.90.1
-    created: "2023-03-09T00:45:32.936258542Z"
+    created: "2023-03-10T22:11:52.869329857Z"
     description: A Helm chart that sets up Kubecost, Prometheus, and Grafana to monitor
       cloud costs.
     digest: 6787e97514887eecd63eb3b24c7d8b4d4fe6342cfc5d418ffde3bcdd17eede3b
@@ -1368,7 +1395,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v2
     appVersion: 1.90.0
-    created: "2023-03-09T00:45:32.92338262Z"
+    created: "2023-03-10T22:11:52.847844763Z"
     description: A Helm chart that sets up Kubecost, Prometheus, and Grafana to monitor
       cloud costs.
     digest: 2e542c593174261ee99ae7036819ddca97ae02759c68416bad44362b9ef4455a
@@ -1382,7 +1409,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v2
     appVersion: 1.90.0-rc.0
-    created: "2023-03-09T00:45:32.910092294Z"
+    created: "2023-03-10T22:11:52.822474189Z"
     description: A Helm chart that sets up Kubecost, Prometheus, and Grafana to monitor
       cloud costs.
     digest: 686bbff66efaa807cb25506012b864e76186b67c95c8c92a7b4f25364a74cc84
@@ -1396,7 +1423,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v2
     appVersion: 1.89.2
-    created: "2023-03-09T00:45:32.897803378Z"
+    created: "2023-03-10T22:11:52.804673966Z"
     description: A Helm chart that sets up Kubecost, Prometheus, and Grafana to monitor
       cloud costs.
     digest: 28e7265d6084e1c6710bc1b70f29f1e7cdf5dbb990ba16a77e532b26ba668dae
@@ -1410,7 +1437,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v2
     appVersion: 1.89.1
-    created: "2023-03-09T00:45:32.885021357Z"
+    created: "2023-03-10T22:11:52.785939199Z"
     description: A Helm chart that sets up Kubecost, Prometheus, and Grafana to monitor
       cloud costs.
     digest: 6f95a63c9c2fb02e2af2925ec64886ac120e36c26acda5e484c79a4673310b01
@@ -1424,7 +1451,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v2
     appVersion: 1.89.0
-    created: "2023-03-09T00:45:32.871937033Z"
+    created: "2023-03-10T22:11:52.769185424Z"
     description: A Helm chart that sets up Kubecost, Prometheus, and Grafana to monitor
       cloud costs.
     digest: 27f8debe3f457c49c399b30c938fae0209dacc50a16986283e29226ee4c3de28
@@ -1438,7 +1465,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v2
     appVersion: 1.89.0-rc.2
-    created: "2023-03-09T00:45:32.861183431Z"
+    created: "2023-03-10T22:11:52.753573402Z"
     description: A Helm chart that sets up Kubecost, Prometheus, and Grafana to monitor
       cloud costs.
     digest: ce1e27a46474d2b77c57d7953b981fcc5b00de56771b47182e8f7dd79a835bd7
@@ -1452,7 +1479,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v2
     appVersion: 1.89.0-rc.1
-    created: "2023-03-09T00:45:32.841412343Z"
+    created: "2023-03-10T22:11:52.731450678Z"
     description: A Helm chart that sets up Kubecost, Prometheus, and Grafana to monitor
       cloud costs.
     digest: d0cacace91e6b0663f14d35b310429b3ac4b68ce97c32b49c58b06f54bea48d9
@@ -1466,7 +1493,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v2
     appVersion: 1.89.0-rc.0
-    created: "2023-03-09T00:45:32.828912025Z"
+    created: "2023-03-10T22:11:52.712591306Z"
     description: A Helm chart that sets up Kubecost, Prometheus, and Grafana to monitor
       cloud costs.
     digest: 6cef3a795d783a0b07ebcaf959fc2455905335f9ab5bc13b11ae2e47a521b777
@@ -1480,7 +1507,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v2
     appVersion: 1.88.1
-    created: "2023-03-09T00:45:32.803661685Z"
+    created: "2023-03-10T22:11:52.699344993Z"
     description: A Helm chart that sets up Kubecost, Prometheus, and Grafana to monitor
       cloud costs.
     digest: 5b6520fb4e87a7a4c81d83ca2779c719865211d4985975f231f5f2a614f9026e
@@ -1494,7 +1521,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v2
     appVersion: 1.88.0
-    created: "2023-03-09T00:45:32.790716963Z"
+    created: "2023-03-10T22:11:52.680336613Z"
     description: A Helm chart that sets up Kubecost, Prometheus, and Grafana to monitor
       cloud costs.
     digest: 88da0a3806bc7d0c26151ad957474bf4b87d558d7af28d3ef6f8c225697371ed
@@ -1508,7 +1535,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v2
     appVersion: 1.87.3
-    created: "2023-03-09T00:45:32.75876636Z"
+    created: "2023-03-10T22:11:52.660630202Z"
     description: A Helm chart that sets up Kubecost, Prometheus, and Grafana to monitor
       cloud costs.
     digest: 3ba4177d2834771d739f598f93d22d27255a4c6e269570b0d63025330345a66d
@@ -1522,7 +1549,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v2
     appVersion: 1.87.2
-    created: "2023-03-09T00:45:32.747736655Z"
+    created: "2023-03-10T22:11:52.637621337Z"
     description: A Helm chart that sets up Kubecost, Prometheus, and Grafana to monitor
       cloud costs.
     digest: 56b7612c7425987d145b1cb9970e32dd3603535c6c70845bee094f9c7920b925
@@ -1536,7 +1563,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v2
     appVersion: 1.87.1
-    created: "2023-03-09T00:45:32.725189942Z"
+    created: "2023-03-10T22:11:52.618064632Z"
     description: A Helm chart that sets up Kubecost, Prometheus, and Grafana to monitor
       cloud costs.
     digest: 2a02e38a4fd3cbe1dede9ba8ecf1d460726a26e5cf7268498d926bcfd76393cc
@@ -1550,7 +1577,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v2
     appVersion: 1.87.0
-    created: "2023-03-09T00:45:32.711735914Z"
+    created: "2023-03-10T22:11:52.591120686Z"
     description: A Helm chart that sets up Kubecost, Prometheus, and Grafana to monitor
       cloud costs.
     digest: 97152c919860794d4f602d2f472eecfe773bc8e551955902291260c793c1df36
@@ -1564,7 +1591,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v2
     appVersion: 1.86.1
-    created: "2023-03-09T00:45:32.696750772Z"
+    created: "2023-03-10T22:11:52.570563235Z"
     description: A Helm chart that sets up Kubecost, Prometheus, and Grafana to monitor
       cloud costs.
     digest: 655b2da5156afb090df2962210a9d8708bcbb8c995b7f5cefaad0b17ac476e05
@@ -1578,7 +1605,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v2
     appVersion: 1.86.0
-    created: "2023-03-09T00:45:32.678010994Z"
+    created: "2023-03-10T22:11:52.548342607Z"
     description: A Helm chart that sets up Kubecost, Prometheus, and Grafana to monitor
       cloud costs.
     digest: 0f8330db03cf38989cd5ac374d579962a4fe7090191884aee230a75b7e460ce9
@@ -1592,7 +1619,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v2
     appVersion: 1.85.3
-    created: "2023-03-09T00:45:32.656118387Z"
+    created: "2023-03-10T22:11:52.52356736Z"
     description: A Helm chart that sets up Kubecost, Prometheus, and Grafana to monitor
       cloud costs.
     digest: dfeae60d62c125debce2a78326c68a3eda7a7ac38acc489cf8c5a87fb13fd2c8
@@ -1606,7 +1633,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v2
     appVersion: 1.85.2
-    created: "2023-03-09T00:45:32.639216027Z"
+    created: "2023-03-10T22:11:52.510311147Z"
     description: A Helm chart that sets up Kubecost, Prometheus, and Grafana to monitor
       cloud costs.
     digest: 105bfc131d615f81e27cd8a3453fbc145db5d94b7d60083eb2afa6ba71f7999b
@@ -1620,7 +1647,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v2
     appVersion: 1.85.1
-    created: "2023-03-09T00:45:32.622954473Z"
+    created: "2023-03-10T22:11:52.478335368Z"
     description: A Helm chart that sets up Kubecost, Prometheus, and Grafana to monitor
       cloud costs.
     digest: 3f7bdd03c527f0c52b5a32fc5af6a5f8e3bd58a3a15ed7f4b2243254af69ae6b
@@ -1634,7 +1661,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v2
     appVersion: 1.85.0
-    created: "2023-03-09T00:45:32.601435769Z"
+    created: "2023-03-10T22:11:52.458675758Z"
     description: A Helm chart that sets up Kubecost, Prometheus, and Grafana to monitor
       cloud costs.
     digest: 1c10911714fc541bd478b1d17f65d66af629a92ebde5dabc248b4e52a6386ca5
@@ -1648,7 +1675,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v2
     appVersion: 1.84.1
-    created: "2023-03-09T00:45:32.581709382Z"
+    created: "2023-03-10T22:11:52.443643863Z"
     description: A Helm chart that sets up Kubecost, Prometheus, and Grafana to monitor
       cloud costs.
     digest: 08c55cf5b4d09701d52bce82832a3e67769f38baa3c96ba4aae6408d9f24e437
@@ -1662,7 +1689,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v2
     appVersion: 1.84.0
-    created: "2023-03-09T00:45:32.563296807Z"
+    created: "2023-03-10T22:11:52.427575819Z"
     description: A Helm chart that sets up Kubecost, Prometheus, and Grafana to monitor
       cloud costs.
     digest: 5568f74946e71ab55ba1c5078c8b2ef037c5df5e48ad1fe1526167699e625fdc
@@ -1676,7 +1703,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v2
     appVersion: 1.83.2
-    created: "2023-03-09T00:45:32.551454395Z"
+    created: "2023-03-10T22:11:52.408857853Z"
     description: A Helm chart that sets up Kubecost, Prometheus, and Grafana to monitor
       cloud costs.
     digest: 023f1c2ec92d294f732bd1a7514319854115fe4ada2246818199a1f0c3f0f55f
@@ -1690,7 +1717,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v2
     appVersion: 1.83.1
-    created: "2023-03-09T00:45:32.532758118Z"
+    created: "2023-03-10T22:11:52.390994327Z"
     description: A Helm chart that sets up Kubecost, Prometheus, and Grafana to monitor
       cloud costs.
     digest: 178a0dc9da4ca98be5742655b940847a78dfbaf359f773fad039bd7d8faedd3c
@@ -1704,7 +1731,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v2
     appVersion: 1.83.0
-    created: "2023-03-09T00:45:32.512514326Z"
+    created: "2023-03-10T22:11:52.372833587Z"
     description: A Helm chart that sets up Kubecost, Prometheus, and Grafana to monitor
       cloud costs.
     digest: 89606b0eaf3b33b24a2c95174b0f374999ab68a67cd100224fa3d180ebf04306
@@ -1718,7 +1745,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v1
     appVersion: 1.82.2
-    created: "2023-03-09T00:45:32.496368473Z"
+    created: "2023-03-10T22:11:52.343805544Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -1745,7 +1772,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v1
     appVersion: 1.82.1
-    created: "2023-03-09T00:45:32.484711762Z"
+    created: "2023-03-10T22:11:52.324805965Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -1772,7 +1799,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v1
     appVersion: 1.82.0
-    created: "2023-03-09T00:45:32.47175984Z"
+    created: "2023-03-10T22:11:52.306747929Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -1799,7 +1826,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v1
     appVersion: 1.82.0-rc.1
-    created: "2023-03-09T00:45:32.444686083Z"
+    created: "2023-03-10T22:11:52.29358282Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -1826,7 +1853,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v1
     appVersion: 1.82.0-rc.0
-    created: "2023-03-09T00:45:32.422700275Z"
+    created: "2023-03-10T22:11:52.280896533Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -1853,7 +1880,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v1
     appVersion: 1.81.0
-    created: "2023-03-09T00:45:32.404299Z"
+    created: "2023-03-10T22:11:52.268276149Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -1880,7 +1907,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v1
     appVersion: 1.80.1
-    created: "2023-03-09T00:45:32.386021327Z"
+    created: "2023-03-10T22:11:52.255397054Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -1907,7 +1934,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v1
     appVersion: 1.80.0
-    created: "2023-03-09T00:45:32.367876255Z"
+    created: "2023-03-10T22:11:52.242760169Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -1934,7 +1961,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v1
     appVersion: 1.79.1
-    created: "2023-03-09T00:45:32.349549481Z"
+    created: "2023-03-10T22:11:52.229681264Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -1961,7 +1988,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v1
     appVersion: 1.79.0
-    created: "2023-03-09T00:45:32.335104844Z"
+    created: "2023-03-10T22:11:52.216463052Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -1988,7 +2015,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v1
     appVersion: 1.78.0
-    created: "2023-03-09T00:45:32.299145303Z"
+    created: "2023-03-10T22:11:52.202874724Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -2015,7 +2042,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v1
     appVersion: 1.77.1
-    created: "2023-03-09T00:45:32.280282125Z"
+    created: "2023-03-10T22:11:52.189877422Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -2042,7 +2069,7 @@ entries:
           url: https://www.kubecost.com
     apiVersion: v1
     appVersion: 1.77.0
-    created: "2023-03-09T00:45:32.262185253Z"
+    created: "2023-03-10T22:11:52.176622809Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -2065,7 +2092,7 @@ entries:
     version: 1.77.0
   - apiVersion: v1
     appVersion: 1.76.0
-    created: "2023-03-09T00:45:32.248740526Z"
+    created: "2023-03-10T22:11:52.163153886Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -2088,7 +2115,7 @@ entries:
     version: 1.76.0
   - apiVersion: v1
     appVersion: 1.75.1
-    created: "2023-03-09T00:45:32.236359008Z"
+    created: "2023-03-10T22:11:52.149917473Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -2111,7 +2138,7 @@ entries:
     version: 1.75.1
   - apiVersion: v1
     appVersion: 1.75.0
-    created: "2023-03-09T00:45:32.2248715Z"
+    created: "2023-03-10T22:11:52.136831468Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -2134,7 +2161,7 @@ entries:
     version: 1.75.0
   - apiVersion: v1
     appVersion: 1.74.0
-    created: "2023-03-09T00:45:32.210803066Z"
+    created: "2023-03-10T22:11:52.12391287Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -2157,7 +2184,7 @@ entries:
     version: 1.74.0
   - apiVersion: v1
     appVersion: 1.73.0
-    created: "2023-03-09T00:45:32.199688461Z"
+    created: "2023-03-10T22:11:52.110797364Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -2180,7 +2207,7 @@ entries:
     version: 1.73.0
   - apiVersion: v1
     appVersion: 1.72.0
-    created: "2023-03-09T00:45:32.176271639Z"
+    created: "2023-03-10T22:11:52.097686457Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -2203,7 +2230,7 @@ entries:
     version: 1.72.0
   - apiVersion: v1
     appVersion: 1.71.1
-    created: "2023-03-09T00:45:32.158952975Z"
+    created: "2023-03-10T22:11:52.08413923Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -2226,7 +2253,7 @@ entries:
     version: 1.71.1
   - apiVersion: v1
     appVersion: 1.71.0
-    created: "2023-03-09T00:45:32.147979871Z"
+    created: "2023-03-10T22:11:52.07159595Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -2249,7 +2276,7 @@ entries:
     version: 1.71.0
   - apiVersion: v1
     appVersion: 1.70.1
-    created: "2023-03-09T00:45:32.126881971Z"
+    created: "2023-03-10T22:11:52.058884262Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -2272,7 +2299,7 @@ entries:
     version: 1.70.1
   - apiVersion: v1
     appVersion: 1.70.0
-    created: "2023-03-09T00:45:32.103497549Z"
+    created: "2023-03-10T22:11:52.047459133Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -2295,7 +2322,7 @@ entries:
     version: 1.70.0
   - apiVersion: v1
     appVersion: 1.69.0
-    created: "2023-03-09T00:45:32.085919283Z"
+    created: "2023-03-10T22:11:52.034165918Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -2318,7 +2345,7 @@ entries:
     version: 1.69.0
   - apiVersion: v1
     appVersion: 1.68.1
-    created: "2023-03-09T00:45:32.075191881Z"
+    created: "2023-03-10T22:11:52.021046811Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -2341,7 +2368,7 @@ entries:
     version: 1.68.1
   - apiVersion: v1
     appVersion: 1.68.0
-    created: "2023-03-09T00:45:32.055984799Z"
+    created: "2023-03-10T22:11:52.007726695Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -2364,7 +2391,7 @@ entries:
     version: 1.68.0
   - apiVersion: v1
     appVersion: 1.67.3
-    created: "2023-03-09T00:45:32.033109482Z"
+    created: "2023-03-10T22:11:51.99420867Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -2387,7 +2414,7 @@ entries:
     version: 1.67.3
   - apiVersion: v1
     appVersion: 1.67.2
-    created: "2023-03-09T00:45:32.022959986Z"
+    created: "2023-03-10T22:11:51.981073362Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -2410,7 +2437,7 @@ entries:
     version: 1.67.2
   - apiVersion: v1
     appVersion: 1.67.1
-    created: "2023-03-09T00:45:32.002483992Z"
+    created: "2023-03-10T22:11:51.968427177Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -2433,7 +2460,7 @@ entries:
     version: 1.67.1
   - apiVersion: v1
     appVersion: 1.67.0
-    created: "2023-03-09T00:45:31.97273711Z"
+    created: "2023-03-10T22:11:51.955868596Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -2456,7 +2483,7 @@ entries:
     version: 1.67.0
   - apiVersion: v1
     appVersion: 1.66.0
-    created: "2023-03-09T00:45:31.959864088Z"
+    created: "2023-03-10T22:11:51.943774336Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -2479,7 +2506,7 @@ entries:
     version: 1.66.0
   - apiVersion: v1
     appVersion: 1.65.0
-    created: "2023-03-09T00:45:31.949099686Z"
+    created: "2023-03-10T22:11:51.931871086Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -2502,7 +2529,7 @@ entries:
     version: 1.65.0
   - apiVersion: v1
     appVersion: 1.64.0
-    created: "2023-03-09T00:45:31.922304432Z"
+    created: "2023-03-10T22:11:51.92051316Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -2525,7 +2552,7 @@ entries:
     version: 1.64.0
   - apiVersion: v1
     appVersion: 1.63.1
-    created: "2023-03-09T00:45:31.912708841Z"
+    created: "2023-03-10T22:11:51.909624856Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -2548,7 +2575,7 @@ entries:
     version: 1.63.1
   - apiVersion: v1
     appVersion: 1.63.0
-    created: "2023-03-09T00:45:31.895586478Z"
+    created: "2023-03-10T22:11:51.897686204Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -2571,7 +2598,7 @@ entries:
     version: 1.63.0
   - apiVersion: v1
     appVersion: 1.62.0
-    created: "2023-03-09T00:45:31.878262214Z"
+    created: "2023-03-10T22:11:51.886085967Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -2594,7 +2621,7 @@ entries:
     version: 1.62.0
   - apiVersion: v1
     appVersion: 1.61.3
-    created: "2023-03-09T00:45:31.855555699Z"
+    created: "2023-03-10T22:11:51.874831047Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -2617,7 +2644,7 @@ entries:
     version: 1.61.3
   - apiVersion: v1
     appVersion: 1.61.2
-    created: "2023-03-09T00:45:31.845870207Z"
+    created: "2023-03-10T22:11:51.863845538Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -2640,7 +2667,7 @@ entries:
     version: 1.61.2
   - apiVersion: v1
     appVersion: 1.61.1
-    created: "2023-03-09T00:45:31.828436042Z"
+    created: "2023-03-10T22:11:51.853444157Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -2663,7 +2690,7 @@ entries:
     version: 1.61.1
   - apiVersion: v1
     appVersion: 1.61.0
-    created: "2023-03-09T00:45:31.811725984Z"
+    created: "2023-03-10T22:11:51.842009928Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -2686,7 +2713,7 @@ entries:
     version: 1.61.0
   - apiVersion: v1
     appVersion: 1.60.2
-    created: "2023-03-09T00:45:31.794874924Z"
+    created: "2023-03-10T22:11:51.82993807Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -2709,7 +2736,7 @@ entries:
     version: 1.60.2
   - apiVersion: v1
     appVersion: 1.60.1
-    created: "2023-03-09T00:45:31.778226866Z"
+    created: "2023-03-10T22:11:51.818598245Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -2732,7 +2759,7 @@ entries:
     version: 1.60.1
   - apiVersion: v1
     appVersion: 1.60.0
-    created: "2023-03-09T00:45:31.767863868Z"
+    created: "2023-03-10T22:11:51.8068242Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -2755,7 +2782,7 @@ entries:
     version: 1.60.0
   - apiVersion: v1
     appVersion: 1.59.2
-    created: "2023-03-09T00:45:31.751557413Z"
+    created: "2023-03-10T22:11:51.796798836Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -2778,7 +2805,7 @@ entries:
     version: 1.59.2
   - apiVersion: v1
     appVersion: 1.59.1
-    created: "2023-03-09T00:45:31.732007428Z"
+    created: "2023-03-10T22:11:51.7830461Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -2801,7 +2828,7 @@ entries:
     version: 1.59.1
   - apiVersion: v1
     appVersion: 1.59.0
-    created: "2023-03-09T00:45:31.719002505Z"
+    created: "2023-03-10T22:11:51.771402961Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -2824,7 +2851,7 @@ entries:
     version: 1.59.0
   - apiVersion: v1
     appVersion: 1.58.1
-    created: "2023-03-09T00:45:31.704643769Z"
+    created: "2023-03-10T22:11:51.759632417Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -2847,7 +2874,7 @@ entries:
     version: 1.58.1
   - apiVersion: v1
     appVersion: 1.58.0
-    created: "2023-03-09T00:45:31.686422196Z"
+    created: "2023-03-10T22:11:51.747799769Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -2870,7 +2897,7 @@ entries:
     version: 1.58.0
   - apiVersion: v1
     appVersion: 1.57.2
-    created: "2023-03-09T00:45:31.668037022Z"
+    created: "2023-03-10T22:11:51.734377048Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -2893,7 +2920,7 @@ entries:
     version: 1.57.2
   - apiVersion: v1
     appVersion: 1.57.1
-    created: "2023-03-09T00:45:31.652647976Z"
+    created: "2023-03-10T22:11:51.721749664Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -2916,7 +2943,7 @@ entries:
     version: 1.57.1
   - apiVersion: v1
     appVersion: 1.57.0
-    created: "2023-03-09T00:45:31.634637705Z"
+    created: "2023-03-10T22:11:51.70934319Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -2939,7 +2966,7 @@ entries:
     version: 1.57.0
   - apiVersion: v1
     appVersion: 1.56.1
-    created: "2023-03-09T00:45:31.616502233Z"
+    created: "2023-03-10T22:11:51.699374029Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -2962,7 +2989,7 @@ entries:
     version: 1.56.1
   - apiVersion: v1
     appVersion: 1.56.0
-    created: "2023-03-09T00:45:31.600102878Z"
+    created: "2023-03-10T22:11:51.68880984Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -2985,7 +3012,7 @@ entries:
     version: 1.56.0
   - apiVersion: v1
     appVersion: 1.55.1
-    created: "2023-03-09T00:45:31.586075245Z"
+    created: "2023-03-10T22:11:51.676932191Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -3008,7 +3035,7 @@ entries:
     version: 1.55.1
   - apiVersion: v1
     appVersion: 1.55.0
-    created: "2023-03-09T00:45:31.568555979Z"
+    created: "2023-03-10T22:11:51.665689471Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -3031,7 +3058,7 @@ entries:
     version: 1.55.0
   - apiVersion: v1
     appVersion: 1.54.1
-    created: "2023-03-09T00:45:31.559125189Z"
+    created: "2023-03-10T22:11:51.654174638Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -3054,7 +3081,7 @@ entries:
     version: 1.54.1
   - apiVersion: v1
     appVersion: 1.54.0
-    created: "2023-03-09T00:45:31.54444975Z"
+    created: "2023-03-10T22:11:51.645671445Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -3077,7 +3104,7 @@ entries:
     version: 1.54.0
   - apiVersion: v1
     appVersion: 1.53.3
-    created: "2023-03-09T00:45:31.533973751Z"
+    created: "2023-03-10T22:11:51.6338924Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -3100,7 +3127,7 @@ entries:
     version: 1.53.3
   - apiVersion: v1
     appVersion: 1.53.2
-    created: "2023-03-09T00:45:31.524610962Z"
+    created: "2023-03-10T22:11:51.621908745Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -3123,7 +3150,7 @@ entries:
     version: 1.53.2
   - apiVersion: v1
     appVersion: 1.53.1
-    created: "2023-03-09T00:45:31.514386265Z"
+    created: "2023-03-10T22:11:51.61120745Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -3146,7 +3173,7 @@ entries:
     version: 1.53.1
   - apiVersion: v1
     appVersion: 1.53.0
-    created: "2023-03-09T00:45:31.50431897Z"
+    created: "2023-03-10T22:11:51.60082837Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -3169,7 +3196,7 @@ entries:
     version: 1.53.0
   - apiVersion: v1
     appVersion: 1.52.2
-    created: "2023-03-09T00:45:31.493494867Z"
+    created: "2023-03-10T22:11:51.588822714Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -3192,7 +3219,7 @@ entries:
     version: 1.52.2
   - apiVersion: v1
     appVersion: 1.52.1
-    created: "2023-03-09T00:45:31.484022478Z"
+    created: "2023-03-10T22:11:51.576676852Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -3215,7 +3242,7 @@ entries:
     version: 1.52.1
   - apiVersion: v1
     appVersion: 1.52.0
-    created: "2023-03-09T00:45:31.47160936Z"
+    created: "2023-03-10T22:11:51.56538723Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -3238,7 +3265,7 @@ entries:
     version: 1.52.0
   - apiVersion: v1
     appVersion: 1.51.2
-    created: "2023-03-09T00:45:31.462961378Z"
+    created: "2023-03-10T22:11:51.555346366Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -3261,7 +3288,7 @@ entries:
     version: 1.51.2
   - apiVersion: v1
     appVersion: 1.51.1
-    created: "2023-03-09T00:45:31.452381878Z"
+    created: "2023-03-10T22:11:51.543898836Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -3284,7 +3311,7 @@ entries:
     version: 1.51.1
   - apiVersion: v1
     appVersion: 1.51.0
-    created: "2023-03-09T00:45:31.442378083Z"
+    created: "2023-03-10T22:11:51.532664716Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -3307,7 +3334,7 @@ entries:
     version: 1.51.0
   - apiVersion: v1
     appVersion: 1.50.4
-    created: "2023-03-09T00:45:31.432637291Z"
+    created: "2023-03-10T22:11:51.521165084Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -3330,7 +3357,7 @@ entries:
     version: 1.50.4
   - apiVersion: v1
     appVersion: 1.50.3
-    created: "2023-03-09T00:45:31.422382093Z"
+    created: "2023-03-10T22:11:51.510321883Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -3353,7 +3380,7 @@ entries:
     version: 1.50.3
   - apiVersion: v1
     appVersion: 1.50.2
-    created: "2023-03-09T00:45:31.412847903Z"
+    created: "2023-03-10T22:11:51.498922455Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -3376,7 +3403,7 @@ entries:
     version: 1.50.2
   - apiVersion: v1
     appVersion: 1.50.1
-    created: "2023-03-09T00:45:31.399776479Z"
+    created: "2023-03-10T22:11:51.487530928Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -3399,7 +3426,7 @@ entries:
     version: 1.50.1
   - apiVersion: v1
     appVersion: 1.50.0
-    created: "2023-03-09T00:45:31.390820994Z"
+    created: "2023-03-10T22:11:51.477511365Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -3422,7 +3449,7 @@ entries:
     version: 1.50.0
   - apiVersion: v1
     appVersion: 1.49.4
-    created: "2023-03-09T00:45:31.380512997Z"
+    created: "2023-03-10T22:11:51.466285945Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -3445,7 +3472,7 @@ entries:
     version: 1.49.4
   - apiVersion: v1
     appVersion: 1.49.3
-    created: "2023-03-09T00:45:31.370602703Z"
+    created: "2023-03-10T22:11:51.455064426Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -3468,7 +3495,7 @@ entries:
     version: 1.49.3
   - apiVersion: v1
     appVersion: 1.49.2
-    created: "2023-03-09T00:45:31.361172813Z"
+    created: "2023-03-10T22:11:51.44391011Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -3491,7 +3518,7 @@ entries:
     version: 1.49.2
   - apiVersion: v1
     appVersion: 1.49.1
-    created: "2023-03-09T00:45:31.351179819Z"
+    created: "2023-03-10T22:11:51.433146712Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -3514,7 +3541,7 @@ entries:
     version: 1.49.1
   - apiVersion: v1
     appVersion: 1.49.0
-    created: "2023-03-09T00:45:31.342269634Z"
+    created: "2023-03-10T22:11:51.421898292Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -3537,7 +3564,7 @@ entries:
     version: 1.49.0
   - apiVersion: v1
     appVersion: 1.48.3
-    created: "2023-03-09T00:45:31.333028846Z"
+    created: "2023-03-10T22:11:51.410827479Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -3560,7 +3587,7 @@ entries:
     version: 1.48.3
   - apiVersion: v1
     appVersion: 1.48.2
-    created: "2023-03-09T00:45:31.323086152Z"
+    created: "2023-03-10T22:11:51.401346041Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -3583,7 +3610,7 @@ entries:
     version: 1.48.2
   - apiVersion: v1
     appVersion: 1.48.1
-    created: "2023-03-09T00:45:31.313446761Z"
+    created: "2023-03-10T22:11:51.389679501Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -3606,7 +3633,7 @@ entries:
     version: 1.48.1
   - apiVersion: v1
     appVersion: 1.48.0
-    created: "2023-03-09T00:45:31.30381857Z"
+    created: "2023-03-10T22:11:51.378371178Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -3629,7 +3656,7 @@ entries:
     version: 1.48.0
   - apiVersion: v1
     appVersion: 1.47.1
-    created: "2023-03-09T00:45:31.295201788Z"
+    created: "2023-03-10T22:11:51.367360968Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -3652,7 +3679,7 @@ entries:
     version: 1.47.1
   - apiVersion: v1
     appVersion: 1.47.0
-    created: "2023-03-09T00:45:31.285225693Z"
+    created: "2023-03-10T22:11:51.356628072Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -3675,7 +3702,7 @@ entries:
     version: 1.47.0
   - apiVersion: v1
     appVersion: 1.46.6
-    created: "2023-03-09T00:45:31.274649193Z"
+    created: "2023-03-10T22:11:51.346286693Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -3698,7 +3725,7 @@ entries:
     version: 1.46.6
   - apiVersion: v1
     appVersion: 1.46.5
-    created: "2023-03-09T00:45:31.264926901Z"
+    created: "2023-03-10T22:11:51.33519958Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -3721,7 +3748,7 @@ entries:
     version: 1.46.5
   - apiVersion: v1
     appVersion: 1.46.4
-    created: "2023-03-09T00:45:31.254669404Z"
+    created: "2023-03-10T22:11:51.324337878Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -3744,7 +3771,7 @@ entries:
     version: 1.46.4
   - apiVersion: v1
     appVersion: 1.46.3
-    created: "2023-03-09T00:45:31.245362716Z"
+    created: "2023-03-10T22:11:51.314815237Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -3767,7 +3794,7 @@ entries:
     version: 1.46.3
   - apiVersion: v1
     appVersion: 1.46.2
-    created: "2023-03-09T00:45:31.23632523Z"
+    created: "2023-03-10T22:11:51.303789227Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -3790,7 +3817,7 @@ entries:
     version: 1.46.2
   - apiVersion: v1
     appVersion: 1.46.0
-    created: "2023-03-09T00:45:31.226204834Z"
+    created: "2023-03-10T22:11:51.292436302Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -3813,7 +3840,7 @@ entries:
     version: 1.46.0
   - apiVersion: v1
     appVersion: 1.45.2
-    created: "2023-03-09T00:45:31.215678534Z"
+    created: "2023-03-10T22:11:51.281783609Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -3832,7 +3859,7 @@ entries:
     version: 1.45.2
   - apiVersion: v1
     appVersion: 1.45.1
-    created: "2023-03-09T00:45:31.206861751Z"
+    created: "2023-03-10T22:11:51.27316271Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -3851,7 +3878,7 @@ entries:
     version: 1.45.1
   - apiVersion: v1
     appVersion: 1.45.0
-    created: "2023-03-09T00:45:31.198285369Z"
+    created: "2023-03-10T22:11:51.263997386Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -3870,7 +3897,7 @@ entries:
     version: 1.45.0
   - apiVersion: v1
     appVersion: 1.44.4
-    created: "2023-03-09T00:45:31.190547996Z"
+    created: "2023-03-10T22:11:51.25479086Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -3889,7 +3916,7 @@ entries:
     version: 1.44.4
   - apiVersion: v1
     appVersion: 1.44.3
-    created: "2023-03-09T00:45:31.182954624Z"
+    created: "2023-03-10T22:11:51.246979499Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -3908,7 +3935,7 @@ entries:
     version: 1.44.3
   - apiVersion: v1
     appVersion: 1.44.2
-    created: "2023-03-09T00:45:31.174213241Z"
+    created: "2023-03-10T22:11:51.237721171Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -3927,7 +3954,7 @@ entries:
     version: 1.44.2
   - apiVersion: v1
     appVersion: 1.44.1
-    created: "2023-03-09T00:45:31.165977463Z"
+    created: "2023-03-10T22:11:51.228523445Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -3946,7 +3973,7 @@ entries:
     version: 1.44.1
   - apiVersion: v1
     appVersion: 1.44.0
-    created: "2023-03-09T00:45:31.157764585Z"
+    created: "2023-03-10T22:11:51.221265409Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -3965,7 +3992,7 @@ entries:
     version: 1.44.0
   - apiVersion: v1
     appVersion: 1.43.3
-    created: "2023-03-09T00:45:31.147518588Z"
+    created: "2023-03-10T22:11:51.209674873Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -3984,7 +4011,7 @@ entries:
     version: 1.43.3
   - apiVersion: v1
     appVersion: 1.43.2
-    created: "2023-03-09T00:45:31.137929897Z"
+    created: "2023-03-10T22:11:51.199328294Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -4003,7 +4030,7 @@ entries:
     version: 1.43.2
   - apiVersion: v1
     appVersion: 1.43.1
-    created: "2023-03-09T00:45:31.127243896Z"
+    created: "2023-03-10T22:11:51.188825408Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -4022,7 +4049,7 @@ entries:
     version: 1.43.1
   - apiVersion: v1
     appVersion: 1.43.0
-    created: "2023-03-09T00:45:31.117316502Z"
+    created: "2023-03-10T22:11:51.178329323Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -4041,7 +4068,7 @@ entries:
     version: 1.43.0
   - apiVersion: v1
     appVersion: 1.42.1
-    created: "2023-03-09T00:45:31.108271616Z"
+    created: "2023-03-10T22:11:51.168089449Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -4060,7 +4087,7 @@ entries:
     version: 1.42.1
   - apiVersion: v1
     appVersion: 1.42.0
-    created: "2023-03-09T00:45:31.100835046Z"
+    created: "2023-03-10T22:11:51.159018629Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -4079,7 +4106,7 @@ entries:
     version: 1.42.0
   - apiVersion: v1
     appVersion: 1.41.0
-    created: "2023-03-09T00:45:31.091640559Z"
+    created: "2023-03-10T22:11:51.149867606Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -4098,7 +4125,7 @@ entries:
     version: 1.41.0
   - apiVersion: v1
     appVersion: 1.40.0
-    created: "2023-03-09T00:45:31.084916595Z"
+    created: "2023-03-10T22:11:51.144043937Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -4117,7 +4144,7 @@ entries:
     version: 1.40.0
   - apiVersion: v1
     appVersion: 1.39.0
-    created: "2023-03-09T00:45:31.079514644Z"
+    created: "2023-03-10T22:11:51.137319226Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -4136,7 +4163,7 @@ entries:
     version: 1.39.0
   - apiVersion: v1
     appVersion: 1.38.0
-    created: "2023-03-09T00:45:31.073312485Z"
+    created: "2023-03-10T22:11:51.131464955Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -4155,7 +4182,7 @@ entries:
     version: 1.38.0
   - apiVersion: v1
     appVersion: 1.37.0
-    created: "2023-03-09T00:45:31.067964434Z"
+    created: "2023-03-10T22:11:51.124358726Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -4174,7 +4201,7 @@ entries:
     version: 1.37.0
   - apiVersion: v1
     appVersion: 1.36.0
-    created: "2023-03-09T00:45:31.061637374Z"
+    created: "2023-03-10T22:11:51.118515656Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -4193,7 +4220,7 @@ entries:
     version: 1.36.0
   - apiVersion: v1
     appVersion: 1.35.0
-    created: "2023-03-09T00:45:31.056284023Z"
+    created: "2023-03-10T22:11:51.111623337Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -4212,7 +4239,7 @@ entries:
     version: 1.35.0
   - apiVersion: v1
     appVersion: 1.34.0
-    created: "2023-03-09T00:45:31.050090265Z"
+    created: "2023-03-10T22:11:51.105798967Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -4231,7 +4258,7 @@ entries:
     version: 1.34.0
   - apiVersion: v1
     appVersion: 1.33.0
-    created: "2023-03-09T00:45:31.044855715Z"
+    created: "2023-03-10T22:11:51.098656137Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -4250,7 +4277,7 @@ entries:
     version: 1.33.0
   - apiVersion: v1
     appVersion: 1.32.0
-    created: "2023-03-09T00:45:31.038726757Z"
+    created: "2023-03-10T22:11:51.092804166Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -4269,7 +4296,7 @@ entries:
     version: 1.32.0
   - apiVersion: v1
     appVersion: 1.31.0
-    created: "2023-03-09T00:45:31.033447107Z"
+    created: "2023-03-10T22:11:51.085573632Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -4288,7 +4315,7 @@ entries:
     version: 1.31.0
   - apiVersion: v1
     appVersion: 1.29.0
-    created: "2023-03-09T00:45:31.027127247Z"
+    created: "2023-03-10T22:11:51.079589055Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -4307,7 +4334,7 @@ entries:
     version: 1.29.0
   - apiVersion: v1
     appVersion: 1.28.0
-    created: "2023-03-09T00:45:31.021824297Z"
+    created: "2023-03-10T22:11:51.072370921Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -4326,7 +4353,7 @@ entries:
     version: 1.28.0
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2023-03-09T00:45:31.015274835Z"
+    created: "2023-03-10T22:11:51.06651815Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -4345,7 +4372,7 @@ entries:
     version: 1.27.0
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2023-03-09T00:45:31.009927684Z"
+    created: "2023-03-10T22:11:51.059509026Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -4364,7 +4391,7 @@ entries:
     version: 1.26.0
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2023-03-09T00:45:31.003612524Z"
+    created: "2023-03-10T22:11:51.053963069Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -4383,7 +4410,7 @@ entries:
     version: 1.25.0
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2023-03-09T00:45:30.998503976Z"
+    created: "2023-03-10T22:11:51.046762536Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -4402,7 +4429,7 @@ entries:
     version: 1.24.0
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2023-03-09T00:45:30.992428618Z"
+    created: "2023-03-10T22:11:51.041132375Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -4421,7 +4448,7 @@ entries:
     version: 1.23.0
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2023-03-09T00:45:30.986559563Z"
+    created: "2023-03-10T22:11:51.03560502Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -4440,7 +4467,7 @@ entries:
     version: 1.22.0
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2023-03-09T00:45:30.972123926Z"
+    created: "2023-03-10T22:11:51.018502728Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -4459,7 +4486,7 @@ entries:
     version: 1.21.0
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2023-03-09T00:45:30.955916072Z"
+    created: "2023-03-10T22:11:51.001216629Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -4478,7 +4505,7 @@ entries:
     version: 1.20.0
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2023-03-09T00:45:30.940432425Z"
+    created: "2023-03-10T22:11:50.98503898Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -4497,7 +4524,7 @@ entries:
     version: 1.19.1
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2023-03-09T00:45:30.925908188Z"
+    created: "2023-03-10T22:11:50.968515616Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -4516,7 +4543,7 @@ entries:
     version: 1.18.4
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2023-03-09T00:45:30.910874445Z"
+    created: "2023-03-10T22:11:50.950645289Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -4535,7 +4562,7 @@ entries:
     version: 1.18.3
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2023-03-09T00:45:30.896419508Z"
+    created: "2023-03-10T22:11:50.93424083Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -4554,7 +4581,7 @@ entries:
     version: 1.18.2
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2023-03-09T00:45:30.881703969Z"
+    created: "2023-03-10T22:11:50.918302093Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -4573,7 +4600,7 @@ entries:
     version: 1.18.1
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2023-03-09T00:45:30.865559116Z"
+    created: "2023-03-10T22:11:50.902001839Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -4592,7 +4619,7 @@ entries:
     version: 1.17.2
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2023-03-09T00:45:30.850696275Z"
+    created: "2023-03-10T22:11:50.885516276Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -4611,7 +4638,7 @@ entries:
     version: 1.17.1
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2023-03-09T00:45:30.835950135Z"
+    created: "2023-03-10T22:11:50.867751554Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -4630,7 +4657,7 @@ entries:
     version: 1.17.0
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2023-03-09T00:45:30.819299477Z"
+    created: "2023-03-10T22:11:50.852091529Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -4649,7 +4676,7 @@ entries:
     version: 1.16.5
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2023-03-09T00:45:30.80373713Z"
+    created: "2023-03-10T22:11:50.835609667Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -4668,7 +4695,7 @@ entries:
     version: 1.16.4
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2023-03-09T00:45:30.787770878Z"
+    created: "2023-03-10T22:11:50.818614681Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -4687,7 +4714,7 @@ entries:
     version: 1.16.3
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2023-03-09T00:45:30.772233231Z"
+    created: "2023-03-10T22:11:50.800275232Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -4706,7 +4733,7 @@ entries:
     version: 1.16.2
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2023-03-09T00:45:30.757178988Z"
+    created: "2023-03-10T22:11:50.783848572Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -4725,7 +4752,7 @@ entries:
     version: 1.16.1
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2023-03-09T00:45:30.742272147Z"
+    created: "2023-03-10T22:11:50.767608021Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -4744,7 +4771,7 @@ entries:
     version: 1.16.0
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2023-03-09T00:45:30.726905802Z"
+    created: "2023-03-10T22:11:50.749996006Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -4763,7 +4790,7 @@ entries:
     version: 1.15.0
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2023-03-09T00:45:30.712502965Z"
+    created: "2023-03-10T22:11:50.732015074Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -4782,7 +4809,7 @@ entries:
     version: 1.14.0
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2023-03-09T00:45:30.697608324Z"
+    created: "2023-03-10T22:11:50.715454008Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -4801,7 +4828,7 @@ entries:
     version: 1.13.2
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2023-03-09T00:45:30.683274888Z"
+    created: "2023-03-10T22:11:50.698925043Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -4820,7 +4847,7 @@ entries:
     version: 1.13.1
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2023-03-09T00:45:30.66874285Z"
+    created: "2023-03-10T22:11:50.68308331Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -4839,7 +4866,7 @@ entries:
     version: 1.13.0
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2023-03-09T00:45:30.654935219Z"
+    created: "2023-03-10T22:11:50.664958972Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -4858,7 +4885,7 @@ entries:
     version: 1.11.0
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2023-03-09T00:45:30.487756135Z"
+    created: "2023-03-10T22:11:50.465924763Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -4877,7 +4904,7 @@ entries:
     version: 1.10.5
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2023-03-09T00:45:30.473985904Z"
+    created: "2023-03-10T22:11:50.450316241Z"
     dependencies:
     - condition: global.prometheus.enabled
       name: prometheus
@@ -4894,4 +4921,4 @@ entries:
     urls:
     - cost-analyzer-1.10.4.tgz
     version: 1.10.4
-generated: "2023-03-09T00:45:30.459005262Z"
+generated: "2023-03-10T22:11:50.433127046Z"
